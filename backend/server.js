@@ -6,9 +6,9 @@ app.get("/api/data", (req, res) => {
   res.json({ message: "Hello from the backend!" });
 });
 
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "frontend", "build", "index.html"));
-// });
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "frontend", "build", "index.html"));
+});
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
