@@ -2,9 +2,13 @@
   "name": "mern-vercel-app",
   "version": "1.0.0",
   "scripts": {
-    "start": "node backend/server.js"
+    "start": "node backend/server.js",
+    "frontend_install": "npm install --prefix frontend",
+    "frontend_build": "npm run build --prefix frontend",
+    "build": "concurrently \"npm run start\" \"npm run frontend_install\" \"npm run frontend_build\""
   },
   "dependencies": {
+    "concurrently": "^8.2.1",
     "express": "^4.17.1"
   }
 }
