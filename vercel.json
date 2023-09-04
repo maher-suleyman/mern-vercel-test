@@ -1,7 +1,7 @@
 {
+  "builds": [{ "src": "backend/server.js", "use": "@now/node" }],
   "buildCommand": "cd frontend && npm install && npm run build",
   "outputDirectory": "frontend/build",
-  "builds": [{ "src": "backend/server.js", "use": "@now/node" }],
   "rewrites": [
     {
       "source": "/api/(.*)",
