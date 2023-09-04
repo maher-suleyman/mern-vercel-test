@@ -1,8 +1,5 @@
 {
-  "builds": [
-    { "src": "backend/server.js", "use": "@now/node" },
-    { "src": "frontend", "use": "npm install @vercel/static-build" }
-  ],
+  "builds": [{ "src": "frontend", "use": "@vercel/static-build" }],
   "outputDirectory": "frontend/build",
   "rewrites": [
     {
