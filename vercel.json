@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "builds": [{ "src": "frontend/src", "use": "@vercel/static-build" }],
+  "builds": [{ "src": "frontend/package.json", "use": "@vercel/static-build" }],
   "outputDirectory": "frontend/build",
   "routes": [{ "src": "/(.*)", "dest": "frontend/$1" }]
 }
